@@ -1,0 +1,284 @@
+.hero {
+  color: #fff;
+  background-image: linear-gradient(#00000038, #00000038), url("de40c945c56454ad3815316b2f9cd036.5a8a55b1.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100vw;
+  height: 76vh;
+}
+
+.hero .conteiner {
+  flex-direction: column;
+  width: 80%;
+  min-width: 300px;
+  height: 100%;
+  margin-left: 10%;
+  display: flex;
+}
+
+.hero .conteiner .header {
+  align-items: center;
+  gap: 10px;
+  padding: 2% 0;
+  display: flex;
+}
+
+.hero .conteiner .header .logo h3 {
+  font-size: 34px;
+}
+
+.hero .conteiner .header .nav_header {
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.hero .conteiner .header .nav_header ul {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.hero .conteiner .header .nav_header ul li {
+  display: inline;
+}
+
+.hero .conteiner .header .action ul {
+  gap: 10px;
+  list-style: none;
+  display: flex;
+}
+
+.hero .conteiner .header .action ul li {
+  display: inline;
+}
+
+.hero .conteiner .hero-main {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  height: auto;
+  padding: 3% 0;
+  display: flex;
+}
+
+.hero .conteiner .hero-main .main_title {
+  font-size: 58px;
+}
+
+.hero .conteiner .hero-main .main_info {
+  padding: 3% 0;
+  font-size: 20px;
+}
+
+.hero .conteiner .hero-main .main_button {
+  gap: 30px;
+  padding: 2% 0;
+  display: flex;
+}
+
+.hero .conteiner .hero-main .main_button .hero-main-button {
+  color: #fff;
+  background-color: #ffffff13;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  width: 200px;
+  height: 60px;
+  font-size: larger;
+  transition: background-color .25s ease-out, transform .25s ease-out;
+}
+
+.hero .conteiner .hero-main .main_button .hero-main-button:hover {
+  color: #fff;
+  background-color: #ffae00;
+  transform: scale(1.05);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+a:after {
+  content: "";
+  transform-origin: 100% 100%;
+  background-color: #ffae00;
+  width: 100%;
+  height: 3px;
+  transition: transform .25s ease-out;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+}
+
+a:hover:after {
+  transform-origin: 0 100%;
+  transform: scaleX(1);
+}
+
+@keyframes button-animation {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.description {
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.description .container {
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  display: flex;
+}
+
+.description .container .title {
+  text-align: center;
+  color: #fff;
+  flex-direction: column;
+  gap: 40px;
+  padding: 5% 0;
+  display: flex;
+}
+
+.description .container .title h2 {
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.description .container .title p {
+  letter-spacing: .2px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.description .container .cards {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  display: flex;
+}
+
+.description .container .cards .card {
+  background-color: #fff;
+  flex: none;
+  width: 43vh;
+  height: 23vh;
+}
+
+.description .container .cards .card .card-title {
+  align-items: center;
+  gap: 7%;
+  padding: 5% 10%;
+  display: flex;
+}
+
+.description .container .cards .card .card-title h5 {
+  color: #252b42;
+  font-size: 20px;
+}
+
+.description .container .cards .card .card-description {
+  padding: 5% 10%;
+}
+
+.description .container .cards .card .card-description p {
+  color: #737373;
+  font-size: larger;
+}
+
+.video {
+  color: #fff;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.video .container {
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  display: flex;
+}
+
+.video .container .title {
+  text-align: center;
+  width: auto;
+  height: 80%;
+  padding: 5.8% 0 5%;
+}
+
+.video .container .title h2 {
+  letter-spacing: .2px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.video .container .title p {
+  letter-spacing: .2px;
+  padding-top: 2vh;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.video .container .main {
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 80%;
+  display: flex;
+}
+
+.video .container .main img {
+  width: 70%;
+  height: 70%;
+}
+
+.video .container .main .button {
+  background-color: #00a0c1;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  position: absolute;
+}
+
+.video .container .main .button button {
+  background-color: #fff0;
+  border-color: #fff0;
+}
+
+.feedback {
+  justify-content: center;
+  width: auto;
+  height: 80vh;
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #252b42;
+}
+/*# sourceMappingURL=index.3cc4c8dc.css.map */

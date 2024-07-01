@@ -1,0 +1,17 @@
+{
+  "name": "kmarket",
+  "version": "1.0.0",
+  "description": "Final project of Front-End course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "parcel build styles/main.scss --dist-dir styles",
+    "watch-css": "parcel watch styles/main.scss --dist-dir styles"
+  },
+  "author": "Matvei Nikita",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}

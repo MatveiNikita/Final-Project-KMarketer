@@ -1,0 +1,118 @@
+.end-description {
+  height: 70vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  
+  .container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+    .title {
+      height: 15vh;
+      width: auto;
+      display: flex;
+      padding-top: 5vh;
+      align-items: center;
+      border-bottom: solid 2px #364067;
+
+      h3 {
+        color: #fff;
+        font-size: 34px;
+      }
+
+      ul {
+        margin-left: auto;
+        list-style: none;
+        display: flex;
+        gap: 2vw;
+
+        li {
+          display: inline;
+        }
+      }
+    }
+
+    .main {
+      width: auto;
+      height: 70%;
+      display: flex;
+      align-items: center;
+
+      .container {
+        height: 170px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+          height: 100%;
+          width: 150px;
+          display: flex;
+
+          label {
+            color: #fff;
+            height: 100%;
+
+            ul {
+              color: #BDBDBD;
+              font-size: 18px;
+              list-style: none;
+              padding-top: 2vh;
+              display: flex;
+              flex-direction: column;
+              gap: 1vh;
+            }
+          }
+        }
+
+        .action-form {
+          height: auto;
+          width: max-content;
+          margin-top: 2vh;
+
+          label {
+            height: 100%;
+            width: 300px;
+
+            h2 {
+              color: #fff;
+              padding-bottom: 2vh;
+            }
+
+            .action-card {
+              display: flex;
+              gap: 0vw;
+
+              #inputEmail {
+                height: 48px;
+                width: 228px;
+                padding: 0 10px;
+                font-size: 16px;
+                border-style: none;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+              }
+
+              #subscribeButton {
+                height: 48px;
+                width: 80px;
+                background-color: rgb(255, 174, 0);
+                color: #fff;
+                border: none;
+                font-size: 16px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                &:hover {
+                  background-color: rgb(255, 150, 0);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

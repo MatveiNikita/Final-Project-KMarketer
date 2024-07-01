@@ -1,0 +1,210 @@
+.action-form {
+  height: 90vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .container {
+    height: 88%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/action/23b86792fa186e42f1e4d1fbb65b534d.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .container-form-action {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 10px;
+
+      .form {
+        width: 100%;
+        padding-top: 4%;
+
+        .title {
+          color: #fffdfd;
+          margin-bottom: 20px;
+
+          h5 {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            margin-bottom: 10px;
+          }
+
+          h2 {
+            font-size: 36px;
+          }
+        }
+
+        .action {
+          width: 50%;
+          resize: none;
+
+          .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 15px;
+
+            input,
+            select,
+            textarea {
+              width: calc(50% - 10px);
+              padding: 10px;
+              font-size: 16px;
+              border: 1px solid #ccc;
+              border-radius: 5px;
+            }
+
+            textarea {
+              height: 100px;
+              width: 100%;
+              resize: none;
+            }
+          }
+
+          .submit {
+            display: flex;
+            margin-top: 20px;
+
+            .submit_button {
+              height: 7vh;
+              width: 18vw;
+              background-color: rgb(255, 174, 0);
+              border: none;
+              color: #fff;
+              font-size: 18px;
+              font-weight: bold;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: background-color 0.3s ease;
+
+              &:hover {
+                background-color: rgb(255, 150, 0);
+              }
+
+              &:active {
+                background-color: rgb(255, 120, 0);
+              }
+
+              &:focus {
+                outline: none;
+                box-shadow: 0 0 0 3px rgba(255, 174, 0, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    background-color: #fff;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container-action {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+
+      .description {
+        h3 {
+          font-size: 24px;
+          color: #333;
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-size: 16px;
+          color: #777;
+        }
+      }
+
+      .button-action {
+        input {
+          height: 50px;
+          width: 150px;
+          background-color: rgb(255, 174, 0);
+          border: none;
+          color: #fff;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: rgb(255, 150, 0);
+          }
+
+          &:active {
+            background-color: rgb(255, 120, 0);
+          }
+
+          &:focus {
+            outline: none;
+                box-shadow: 0 0 0 3px rgba(255, 174, 0, 0.5);;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container .container-form-action .form .action {
+      width: 100%;
+
+      .form-group {
+        input,
+        select,
+        textarea {
+          width: 100%;
+        }
+      }
+
+      .submit {
+        height: max-content;
+
+        .submit_button {
+          height: 7vh;
+          width: 28vw;
+        }
+      }
+    }
+
+    .footer{
+      height: max-content;
+
+      .container-action {
+        flex-direction: column;
+        gap: 20px;
+  
+        .description {
+          margin-bottom: 15px;
+        }
+  
+        .button-action {
+          margin-left: auto;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

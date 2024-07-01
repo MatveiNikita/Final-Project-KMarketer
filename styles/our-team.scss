@@ -1,0 +1,66 @@
+.our-team{
+    height: max-content;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 7vh;
+    .container{
+        height: max-content;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+
+        .title{
+            padding: 5% 0;
+
+            h2{
+                font-size: 40px;
+                line-height: 57px;
+                font-weight:700;
+                letter-spacing: 0.2px;
+            }
+
+            p{
+                font-size: large;
+            }
+        }
+        
+        .cards{
+            height: 80%;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            gap: 10vw;
+            flex-wrap: wrap;
+            color: black;
+
+            .card{
+                height: max-content;
+                width: max-content;
+
+                img{
+                    height: 300px;
+                    width: auto;
+                }
+
+                .conteiner{
+                    height: max-content;
+                    width: auto;
+                    background-color: #fff;
+                    ul{
+                        display: flex;
+                        gap: 10%;
+                        justify-content: center;
+                        li{
+                            list-style: none;
+                            display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
